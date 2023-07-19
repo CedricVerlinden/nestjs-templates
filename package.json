@@ -1,14 +1,15 @@
 {
-	"name": "nestjs-files",
-	"publisher": "AbhijoyBasak",
-	"displayName": "NestJS Files",
+	"name": "nestjs-templates",
+	"publisher": "Cédric Verlinden",
+	"contributors": ["AbhijoyBasak"],
+	"displayName": "NestJS Templates",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/SpartanX1/nestjs-files"
+		"url": "https://github.com/CedricVerlinden/nestjs-templates"
 	},
 	"bugs": {
-		"url": "https://github.com/SpartanX1/nestjs-files/issues",
-		"email": "basak.abhijoy@gmail.com"
+		"url": "https://github.com/CedricVerlinden/nestjs-templates/issues",
+		"email": "work@cedricverlinden.com"
 	},
 	"description": "Quickly create NestJS Files",
 	"icon": "images/icon.png",
@@ -20,89 +21,84 @@
 		"Other",
 		"Snippets"
 	],
-	"activationEvents": [
-		"onCommand:extension.GenerateModule",
-		"onCommand:extension.GenerateService",
-		"onCommand:extension.GenerateController",
-		"onCommand:extension.GenerateException",
-		"onCommand:extension.GenerateMiddleware",
-		"onCommand:extension.GenerateInterceptor",
-		"onCommand:extension.GeneratePipe",
-		"onCommand:extension.GenerateGuard",
-		"onCommand:extension.GenerateDecorator",
-		"onCommand:extension.GenerateExceptionFilter",
-		"onCommand:extension.GenerateUnitTest",
-		"onCommand:extension.GenerateGateway",
-		"onCommand:extension.GenerateRedisAdapter",
-		"onCommand:extension.GenerateTransport",
-		"onCommand:extension.GenerateWebpack"
-	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"submenus": [
+			{
+				"id": "nestjsfiles.submenu",
+				"label": "NestJS"
+			}
+		],
 		"commands": [
 			{
 				"command": "extension.GenerateModule",
-				"title": "NestJS - Generate Module"
+				"title": "Generate Module"
 			},
 			{
 				"command": "extension.GenerateService",
-				"title": "NestJS - Generate Service"
+				"title": "Generate Service"
 			},
 			{
 				"command": "extension.GenerateController",
-				"title": "NestJS - Generate Controller"
+				"title": "Generate Controller"
 			},
 			{
 				"command": "extension.GenerateException",
-				"title": "NestJS - Generate Exception"
+				"title": "Generate Exception"
 			},
 			{
 				"command": "extension.GenerateMiddleware",
-				"title": "NestJS - Generate Middleware"
+				"title": "Generate Middleware"
 			},
 			{
 				"command": "extension.GenerateInterceptor",
-				"title": "NestJS - Generate Interceptor"
+				"title": "Generate Interceptor"
 			},
 			{
 				"command": "extension.GeneratePipe",
-				"title": "NestJS - Generate Pipe"
+				"title": "Generate Pipe"
 			},
 			{
 				"command": "extension.GenerateGuard",
-				"title": "NestJS - Generate Guard"
+				"title": "Generate Guard"
 			},
 			{
 				"command": "extension.GenerateDecorator",
-				"title": "NestJS - Generate Decorator"
+				"title": "Generate Decorator"
 			},
 			{
 				"command": "extension.GenerateExceptionFilter",
-				"title": "NestJS - Generate Exception Filter"
+				"title": "Generate Exception Filter"
 			},
 			{
 				"command": "extension.GenerateUnitTest",
-				"title": "NestJS - Generate Unit Test"
+				"title": "Generate Unit Test"
 			},
 			{
 				"command": "extension.GenerateGateway",
-				"title": "NestJS - Generate Socket Gateway"
+				"title": "Generate Socket Gateway"
 			},
 			{
 				"command": "extension.GenerateRedisAdapter",
-				"title": "NestJS - Generate Redis Adapter"
+				"title": "Generate Redis Adapter"
 			},
 			{
 				"command": "extension.GenerateTransport",
-				"title": "NestJS - Generate Custom Transport"
+				"title": "Generate Custom Transport"
 			},
 			{
 				"command": "extension.GenerateWebpack",
-				"title": "NestJS - Generate Webpack"
+				"title": "Generate Webpack"
 			}
 		],
 		"menus": {
 			"explorer/context": [
+				{
+					"submenu": "nestjsfiles.submenu",
+					"group": "2_workspace"
+				}
+			],
+			"nestjsfiles.submenu": [
 				{
 					"command": "extension.GenerateModule",
 					"when": "explorerResourceIsFolder",
