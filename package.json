@@ -21,6 +21,23 @@
 		"Other",
 		"Snippets"
 	],
+	"activationEvents": [
+		"onCommand:extension.GenerateModule",
+		"onCommand:extension.GenerateService",
+		"onCommand:extension.GenerateController",
+		"onCommand:extension.GenerateException",
+		"onCommand:extension.GenerateMiddleware",
+		"onCommand:extension.GenerateInterceptor",
+		"onCommand:extension.GeneratePipe",
+		"onCommand:extension.GenerateGuard",
+		"onCommand:extension.GenerateDecorator",
+		"onCommand:extension.GenerateExceptionFilter",
+		"onCommand:extension.GenerateUnitTest",
+		"onCommand:extension.GenerateGateway",
+		"onCommand:extension.GenerateRedisAdapter",
+		"onCommand:extension.GenerateTransport",
+		"onCommand:extension.GenerateWebpack"
+	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"submenus": [
