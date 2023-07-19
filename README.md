@@ -27,7 +27,7 @@ Generate Gateway |
 
 "NestJS" File Sub Menu Options  |
 ---           | 
-NestJS - Generate Unit Test |
+Generate Unit Test |
 
 > Newly created files will also be registered in your app modules depending on the context
 
