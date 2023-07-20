@@ -1,19 +1,19 @@
-import { Uri } from "vscode";
+import { Uri } from 'vscode';
 
 export class NestFile {
-    type: string;
-    name: string;
-    fullName: string;
-    uri: Uri;
-    associatedArray: string | undefined;
+  type: string;
+  name: string;
+  fullName: string;
+  uri: Uri;
+  associatedArray: string | undefined;
 }
 
 export const NestImports = {
-    filter: `import { APP_FILTER } from '@nestjs/core';`,
+  filter: `import { APP_FILTER } from '@nestjs/core';`,
 };
 
 export const NestProviders = {
-    filter: `{
+  filter: `{
         provide: APP_FILTER,
         useClass: AllExceptionsFilter,
       },`,
